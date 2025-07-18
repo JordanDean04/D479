@@ -39,7 +39,22 @@
     padding: 1rem;
 }
 
-.grid-container-5 {
+.grid-container-food {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "t-sep t-sep t-sep"
+        "header header header"
+        "column1 column2 column3"
+        "info info info"
+        "b-sep b-sep b-sep"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    min-height: 1rem;
+}
+
+.grid-container-faq {
     display: grid;
     grid-template-areas:
         "nav"
@@ -87,6 +102,7 @@
     border: solid black;
     background-color: sandybrown;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .column2 {
@@ -96,6 +112,7 @@
     border: solid black;
     background-color: sandybrown;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .column3 {
@@ -104,6 +121,7 @@
     text-align: center;
     border: solid black;
     background-color: sandybrown;
+    margin-bottom: 1rem;
 }
 
 .column1a {
