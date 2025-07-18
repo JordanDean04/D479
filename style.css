@@ -1,4 +1,4 @@
-.grid-container-1 {
+.grid-container-home {
     display: grid;
     grid-template-areas:
         "nav nav nav"
@@ -13,7 +13,20 @@
     min-height: 1rem;
 }
 
-.grid-container-2 {
+.grid-container-attractions {
+    display:grid;
+    grid-template-areas:
+        "nav nav"
+        "t-sep t-sep"
+        "header header"
+        "column1a column2a"
+        "column1b column2b"
+        "b-sep b-sep"
+        "footer footer";
+    padding: 1rem;
+}
+
+.grid-container-lodging {
     display:grid;
     grid-template-areas:
         "nav nav"
@@ -270,6 +283,14 @@ h4 {
 }
 
 .attractions-img {
+    height: 20rem;
+}
+
+.lodging-img {
+    height: 20rem;
+}
+
+.food-img {
     height: 20rem;
 }
 
