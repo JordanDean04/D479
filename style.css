@@ -8,18 +8,18 @@
         "info info info"
         "b-sep b-sep b-sep"
         "footer footer footer";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem;
     min-height: 1rem;
 }
 
 .nav {
     grid-area: nav;
-    padding: 1rem;
     text-align: center;
-    justify-content: center;
+    justify-content: center;    
+    margin-bottom: 1rem;
 }
+
 
 .top-seperator {
     grid-area: t-sep;
@@ -38,26 +38,35 @@
     grid-area: column1;
     padding: 1rem;
     text-align: center;
+    border: solid black;
+    background-color: sandybrown;
+    margin-right: 1rem;
 }
 
 .column2 {
     grid-area: column2;
     padding: 1rem;
     text-align: center;
+    border: solid black;
+    background-color: sandybrown;
+    margin-right: 1rem;
 }
 
 .column3 {
     grid-area: column3;
     padding: 1rem;
     text-align: center;
+    border: solid black;
+    background-color: sandybrown;
 }
 
 .importantInfo {
     grid-area: info;
     padding: 1rem;
     text-align: center;
-    background-color: yellow;
+    background-color: sandybrown;
     border: solid red;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -77,12 +86,91 @@ ul {
     list-style-position: inside;
 }
 
+body {
+    background-color: lightgoldenrodyellow;
+}
+
 .nav-menu-home-button {
-    background-color: green;;
+    background-color: lightblue;
     color: black;
     padding: 0.1rem 0.1rem;
     font-size: 1.5rem;
-    font-weight: bold;
     border: none;
     width: 10rem;
+    margin-top: 0;
+}
+.nav-menu-home-button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-menu-attractions-button {
+    background-color: lightblue;
+    color: black;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 10rem;
+}
+
+.nav-menu-attractions-button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-menu-lodging-button {
+    background-color: lightblue;
+    color: black;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 10rem;
+}
+
+.nav-menu-lodging-button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-menu-food-button {
+    background-color: lightblue;
+    color: black;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 10rem;
+}
+
+.nav-menu-food-button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-menu-faq-button {
+    background-color: lightblue;
+    color: black;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 10rem;
+}
+
+.nav-menu-faq-button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.indexAttractions {
+    height: 25rem;
+    width: 24rem;
+}
+
+.indexLodging {
+    height: 25rem;
+    width: 24rem;
+}
+
+.indexFood {
+    height: 25rem;
+    width: 24rem;
 }
