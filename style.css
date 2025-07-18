@@ -2,51 +2,87 @@
     display: grid;
     grid-template-areas:
         "nav nav nav"
+        "t-sep t-sep t-sep"
         "header header header"
         "column1 column2 column3"
+        "info info info"
+        "b-sep b-sep b-sep"
         "footer footer footer";
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr auto;
-    gap: 1rem;
     padding: 1rem;
     min-height: 1rem;
 }
 
 .nav {
     grid-area: nav;
-    background-color: blue;
     padding: 1rem;
     text-align: center;
     justify-content: center;
-    
+}
+
+.top-seperator {
+    grid-area: t-sep;
+    padding: 0.25rem;
+    background-color: black;
+    width: 100%;
 }
 
 .header {
     grid-area: header;
-    background-color: red;
     padding: 1rem;
+    text-align: center;
 }
 
 .column1 {
     grid-area: column1;
-    background-color: green;
     padding: 1rem;
+    text-align: center;
 }
 
 .column2 {
     grid-area: column2;
-    background-color: orange;
     padding: 1rem;
+    text-align: center;
 }
 
 .column3 {
     grid-area: column3;
-    background-color: purple;
     padding: 1rem;
+    text-align: center;
+}
+
+.importantInfo {
+    grid-area: info;
+    padding: 1rem;
+    text-align: center;
+    background-color: yellow;
+    border: solid red;
+    margin-bottom: 0.5rem;
 }
 
 .footer {
     grid-area: footer;
-    background-color: yellow;
     padding: 1rem;
+}
+
+.bottom-seperator {
+    grid-area: b-sep;
+    padding: 0.25rem;
+    background-color: black;
+    width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.nav-menu-home-button {
+    background-color: green;;
+    color: black;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    width: 10rem;
 }
