@@ -13,11 +13,26 @@
     min-height: 1rem;
 }
 
+.grid-container-5 {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "t-sep"
+        "header"
+        "info"
+        "b-sep"
+        "footer";
+    padding: 1rem;
+}
+
 .nav {
     grid-area: nav;
     text-align: center;
     justify-content: center;    
     margin-bottom: 1rem;
+    border: solid black;
+    background-color: sandybrown;
+    padding: 1rem;
 }
 
 
@@ -32,6 +47,11 @@
     grid-area: header;
     padding: 1rem;
     text-align: center;
+    border: solid black;
+    background-color: sandybrown;
+    width: 25rem;
+    margin: 1rem auto;
+    padding-bottom: 0.2rem;
 }
 
 .column1 {
@@ -70,9 +90,20 @@
     margin-bottom: 0.5rem;
 }
 
+.info {
+    grid-area: info;
+    text-align: center;
+    border: solid black;
+    background-color: sandybrown;    
+    width: 50rem;
+    margin: 1rem auto;
+}
+
 .footer {
     grid-area: footer;
     padding: 1rem;
+    text-align: center;
+    margin-top: 0;
 }
 
 .bottom-seperator {
@@ -80,6 +111,7 @@
     padding: 0.25rem;
     background-color: black;
     width: 100%;
+    margin-bottom: 0;
 }
 
 ul {
@@ -88,6 +120,15 @@ ul {
 
 body {
     background-color: lightgoldenrodyellow;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-top: 0.5rem;
 }
 
 .nav-menu-home-button {
@@ -173,4 +214,20 @@ body {
 .indexFood {
     height: 25rem;
     width: 24rem;
+}
+
+.icon {
+    display: inline-block;
+    border: solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 0;
+}
+
+.icon-img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
